@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-link {
+	@apply transition-all duration-300 text-gray-300 font-semibold inline-block py-3 px-2 border-b-2 border-transparent hover:text-[#f87c56] hover:border-[#f87c56];
+}
+
+.header-btn {
+	@apply transition-all duration-300 ml-2 py-1 px-3 border-2 rounded-full border-[#f87c56] text-[#f87c56] hover:text-black hover:bg-[#f87c56];
+}
+
+@layer components {
+	.pagination-item {
+		@apply transition-all duration-300 inline-block py-1 px-3 border bg-[#292929] border-gray-300 text-gray-500 hover:bg-[#a7a7a7] hover:text-gray-700;
+	}
+}
+
+.footer-link {
+	@apply transition-all duration-300 inline-block text-gray-500 py-2  hover:text-[#f96a51];
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="/public/styles.css" rel="stylesheet" />
+	</head>
+	<body class="bg-[#141414]">
+		<!-- header -->
+		<header
+			class="px-10 py-3 bg-[#141414] bg-opacity-60 backdrop-blur-md flex items-center justify-between fixed w-full z-30"
+		>
+			<div
+				class="max-w-screen-xl mx-auto flex w-full items-center justify-between"
+			>
+				<a class="uppercase font-bold text-[#f87c56]" href="#">webDev</a>
+				<nav class="hidden md:flex items-center">
+					<ul class="inline-flex items-center">
+						<li>
+							<a class="header-link" href="#">Home</a>
+						</li>
+						<li>
+							<a class="header-link" href="#">About</a>
+						</li>
+						<li>
+							<a class="header-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<ul class="inline-flex items-center">
+						<li>
+							<button class="header-btn">Login</button>
+						</li>
+						<li>
+							<button class="header-btn">Register</button>
+						</li>
+					</ul>
+				</nav>
+				<button class="inline-block md:hidden text-white">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-6 h-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+						/>
+					</svg>
+				</button>
+			</div>
+		</header>
+
+		<div class="max-w-screen-xl mx-auto">
+			<!-- breadcrumbs -->
+			<div class="px-2 flex items-center pt-24">
+				<div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+					<a class="text-gray-600 hover:text-gray-300" href="#">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+							/>
+						</svg>
+					</a>
+					<span class="mx-2 text-gray-700"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m8.25 4.5 7.5 7.5-7.5 7.5"
+							/>
+						</svg>
+					</span>
+					<a class="text-gray-600 hover:text-gray-300" href="#">News</a>
+					<span class="mx-2 text-gray-700"
+						><svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="m8.25 4.5 7.5 7.5-7.5 7.5"
+							/>
+						</svg>
+					</span>
+					<a class="text-gray-600 hover:text-gray-300" href="#">Tech</a>
+				</div>
+			</div>
+
+			<!-- banners img -->
+			<section class="px-2 lg:flex lg:space-x-2">
+				<a
+					class="w-full lg:w-1/3 bg-gradient-to-tr from-red-500 to-blue-500 hover:to-green-500 h-96 mb-4 relative rounded-3xl inline-block overflow-hidden"
+					href="#"
+				>
+					<img
+						class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+						src="public/images/first.jpg"
+						alt="img"
+					/>
+					<div
+						class="p-4 absolute bottom-0 left-0 z-20 bg-[#141414] bg-opacity-40 backdrop-blur-md rounded-3xl"
+					>
+						<h2 class="text-4xl font-semibold text-[#f87c56] leading-tight">
+							Lorem ipsum dolor sit amet consectetur.
+						</h2>
+						<div class="flex items-center">
+							<img
+								class="h-10 w-10 rounded-full mr-2 object-cover"
+								src="https://randomuser.me/api/portraits/men/7.jpg"
+								alt="author"
+							/>
+							<div>
+								<p class="font-semibold text-gray-200 text-sm">Jonh Doe</p>
+								<time class="text-gray-400 test-xs">14 March</time>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a
+					class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded-3xl inline-block overflow-hidden"
+					href="#"
+				>
+					<img
+						class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+						src="public/images/tenth.jpg"
+						alt="img"
+					/>
+					<div
+						class="p-4 absolute bottom-0 left-0 z-20 bg-[#141414] bg-opacity-40 backdrop-blur-md rounded-3xl"
+					>
+						<h2 class="text-4xl font-semibold text-[#f87c56] leading-tight">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum!
+						</h2>
+						<div class="flex items-center">
+							<img
+								class="h-10 w-10 rounded-full mr-2 object-cover"
+								src="https://randomuser.me/api/portraits/women/17.jpg"
+								alt="author"
+							/>
+							<div>
+								<p class="font-semibold text-gray-200 text-sm">Elizabet Ui</p>
+								<time class="text-gray-400 test-xs">17 Juni</time>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a
+					class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded-3xl inline-block overflow-hidden"
+					href="#"
+				>
+					<img
+						class="absolute left-0 top-0 w-full h-full z-0 object-cover"
+						src="public/images/fourth.jpg"
+						alt="img"
+					/>
+					<div
+						class="p-4 absolute bottom-0 left-0 z-20 bg-[#141414] bg-opacity-40 backdrop-blur-md rounded-3xl"
+					>
+						<h2 class="text-4xl font-semibold text-[#f87c56] leading-tight">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum!
+						</h2>
+						<div class="flex items-center">
+							<img
+								class="h-10 w-10 rounded-full mr-2 object-cover"
+								src="https://randomuser.me/api/portraits/men/1.jpg"
+								alt="author"
+							/>
+							<div>
+								<p class="font-semibold text-gray-200 text-sm">Brus Wave</p>
+								<time class="text-gray-400 test-xs">1 March</time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</section>
+
+			<!-- banners -->
+			<section class="px-2 lg:flex lg:space-x-2">
+				<a
+					class="w-full lg:w-2/3 bg-gradient-to-r from-red-500 to-blue-500 hover:to-green-500 h-96 mb-4 relative rounded-3xl inline-block overflow-hidden"
+					href="#"
+				>
+					<div class="p-4 absolute bottom-0 left-0 z-20">
+						<h2 class="text-4xl font-semibold text-[#141414] leading-tight">
+							Lorem ipsum dolor sit amet consectetur.
+						</h2>
+					</div>
+				</a>
+
+				<a
+					class="w-full lg:w-1/3 bg-blue-500 h-96 mb-4 relative rounded-3xl inline-block overflow-hidden hover:bg-green-500"
+					href="#"
+				>
+					<div class="p-4 absolute bottom-0 left-0 z-20">
+						<h2 class="text-4xl font-semibold text-[#141414] leading-tight">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum!
+						</h2>
+					</div>
+				</a>
+			</section>
+
+			<main class="lg:flex">
+				<div class="w-full lg:w-2/3">
+					<!-- post cards -->
+					<section class="px-2">
+						<a
+							class="block w-full lg:flex mb-10 bg-[#292929] bg-opacity-50 backdrop-blur-md border border-1 border-[#ffffff2e] rounded-xl p-4 shadow shadow-[#ffffff2e]"
+							href=""
+						>
+							<img
+								class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4 rounded-md"
+								src="public/images/tenth.jpg"
+								alt="img"
+							/>
+							<div class="flex flex-col justify-between">
+								<div>
+									<h3 class="mb-2 text-white fon-bold text-2xl">
+										Lorem ipsum dolor sit.
+									</h3>
+									<p class="text-gray-400">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Temporibus sunt earum esse vitae, mollitia dolor, maxime
+										eveniet recusandae non itaque eligendi fugiat laboriosam
+										repellat? Placeat.
+									</p>
+								</div>
+								<div class="flex items-center">
+									<img
+										class="h-10 w-10 rounded-full mr-2 object-cover"
+										src="https://randomuser.me/api/portraits/women/2.jpg"
+										alt="author"
+									/>
+									<div>
+										<p class="font-semibold text-gray-200 text-sm">
+											Kaily Jener
+										</p>
+										<time class="text-gray-400 test-xs">14 March</time>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a
+							class="block w-full lg:flex mb-10 bg-[#292929] bg-opacity-50 backdrop-blur-md border border-1 border-[#ffffff2e] rounded-xl p-4 shadow shadow-[#ffffff2e]"
+							href=""
+						>
+							<img
+								class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4 rounded-md"
+								src="public/images/ninth.jpg"
+								alt="img"
+							/>
+							<div class="flex flex-col justify-between">
+								<div>
+									<h3 class="mb-2 text-white fon-bold text-2xl">
+										Lorem ipsum dolor sit amet.
+									</h3>
+									<p class="text-gray-400">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Repellat dolorem adipisci, quo ad nulla soluta.
+									</p>
+								</div>
+								<div class="flex items-center">
+									<img
+										class="h-10 w-10 rounded-full mr-2 object-cover"
+										src="https://randomuser.me/api/portraits/men/21.jpg"
+										alt="author"
+									/>
+									<div>
+										<p class="font-semibold text-gray-200 text-sm">
+											Den Blazer
+										</p>
+										<time class="text-gray-400 test-xs">14 July</time>
+									</div>
+								</div>
+							</div>
+						</a>
+
+						<a
+							class="block w-full lg:flex mb-10 bg-[#292929] bg-opacity-50 backdrop-blur-md border border-1 border-[#ffffff2e] rounded-xl p-4 shadow shadow-[#ffffff2e]"
+							href=""
+						>
+							<img
+								class="w-full h-48 lg:w-48 opacity-80 object-cover lg:mr-4 rounded-md"
+								src="public/images/second.jpg"
+								alt="img"
+							/>
+							<div class="flex flex-col justify-between">
+								<div>
+									<h3 class="mb-2 text-white fon-bold text-2xl">
+										Lorem, ipsum dolor sit amet consectetur adipisicing.
+									</h3>
+									<p class="text-gray-400">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Repellat cum pariatur nisi laborum excepturi, iste
+										architecto aspernatur in magni deserunt quod debitis itaque
+										cumque repellendus delectus cupiditate quo dolorum ad!
+									</p>
+								</div>
+								<div class="flex items-center">
+									<img
+										class="h-10 w-10 rounded-full mr-2 object-cover"
+										src="https://randomuser.me/api/portraits/women/10.jpg"
+										alt="author"
+									/>
+									<div>
+										<p class="font-semibold text-gray-200 text-sm">Jane Doe</p>
+										<time class="text-gray-400 test-xs">11 May</time>
+									</div>
+								</div>
+							</div>
+						</a>
+					</section>
+
+					<!-- pagination -->
+					<div class="mt-20 mb-10">
+						<ul class="flex justify-center">
+							<li>
+								<a class="pagination-item rounded-l-lg" href="">Previous</a>
+							</li>
+							<li>
+								<a class="pagination-item" href="">1</a>
+							</li>
+							<li>
+								<a class="pagination-item" href="">2</a>
+							</li>
+							<li>
+								<a
+									class="pagination-item text-[#f87c56] hover:bg-[#a7a7a7] hover:text-[#f87c56]"
+									href=""
+									>3</a
+								>
+							</li>
+							<li>
+								<a class="pagination-item" href="">4</a>
+							</li>
+							<li>
+								<a class="pagination-item" href="">5</a>
+							</li>
+							<li>
+								<a class="pagination-item rounded-r-lg" href="">Next</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="w-full lg:w-1/3 px-2 md:flex md:space-x-6 lg:block lg:space-x-0"
+				>
+					<!-- topics -->
+					<div class="w-full mb-5 md:w-1/2 lg:w-full">
+						<h5 class="font-bold text-lg uppercase text-[#a7a7a7] mb-2">
+							Popular Frameworks
+						</h5>
+						<ul>
+							<li
+								class="my-1 px-8 py-4 bg-gradient-to-r from-green-500 via-green-800 via-15% to-[#292929] to-40% border-white rounded-2xl"
+							>
+								<a class="flex items-center text-gray-200" href="#">
+									Vue
+									<span class="text-gray-500 ml-auto">23 articles</span>
+								</a>
+							</li>
+							<li
+								class="my-1 px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-800 via-15% to-[#292929] to-40% border-white rounded-2xl"
+							>
+								<a class="flex items-center text-gray-200" href="#">
+									Svelte
+									<span class="text-gray-500 ml-auto">7 articles</span>
+								</a>
+							</li>
+							<li
+								class="my-1 px-8 py-4 bg-gradient-to-r from-red-500 via-red-800 via-15% to-[#292929] to-40% border-white rounded-2xl"
+							>
+								<a class="flex items-center text-gray-200" href="#">
+									Angular
+									<span class="text-gray-500 ml-auto">19 articles</span>
+								</a>
+							</li>
+							<li
+								class="my-1 px-8 py-4 bg-gradient-to-r from-blue-500 via-blue-800 via-15% to-[#292929] to-40% border-white rounded-2xl"
+							>
+								<a class="flex items-center text-gray-200" href="#">
+									React
+									<span class="text-gray-500 ml-auto">15 articles</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="w-full md:w-1/2 lg:w-full">
+						<!-- subscribe -->
+						<div class="my-5 md:my-0 lg:my-5">
+							<h5 class="font-bold text-lg uppercase text-[#a7a7a7] mb-2">
+								Subscribe
+							</h5>
+							<p class="text-[#a7a7a7] mb-4">Subscribe to our newsletter.</p>
+							<input
+								placeholder="your email address"
+								class="text-gray-900 bg-gray-100 p-2 w-full border rounded-t-xl hover:border-gray-600 focus:outline-none"
+								type="email"
+							/>
+							<button
+								class="px-4 py-2 bg-[#f87c56] text-black w-full rounded-b-xl hover:bg-[#f96a51]"
+							>
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<!-- footer -->
+			<footer class="border-t mt-10 py-10 px-2">
+				<div class="md:flex">
+					<div class="w-full mb-5 md:w-2/5">
+						<h6 class="font-semibold text-gray-300 mb-4">Company</h6>
+						<ul>
+							<li>
+								<a class="footer-link" href="#">Team</a>
+							</li>
+							<li>
+								<a class="footer-link" href="#">About Us</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="w-full mb-5 md:w-2/5">
+						<h6 class="font-semibold text-gray-300 mb-4">Content</h6>
+						<ul>
+							<li>
+								<a class="footer-link" href="#">Block</a>
+							</li>
+							<li>
+								<a class="footer-link" href="#">Policy</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="w-full md:w-1/5">
+						<h6 class="font-semibold text-gray-300 mb-4">Contact Us</h6>
+						<ul class="flex">
+							<li class="mr-2">
+								<a class="footer-link" href="#"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-7 h-7"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li class="mr-2">
+								<a class="footer-link" href="#"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-7 h-7"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="footer-link" href="#"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke-width="1.5"
+										stroke="currentColor"
+										class="w-7 h-7"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+										/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
